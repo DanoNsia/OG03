@@ -1,6 +1,8 @@
 import pygame
 import random
+import sys
 pygame.init()
+pygame.mixer.init()
 
 SCREEN_WIDTH = 1600
 SCREEN_HEIGHT = 900
@@ -19,6 +21,10 @@ target_y = random.randint(0, SCREEN_HEIGHT - target_height)
 
 color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
+pygame.mixer.music.load("C:/Users/sibra/Downloads/Xlout-Aria-Math-_Phonk-Remix_-_Feat.-Nateki_.mp3")
+pygame.mixer.music.play(-1)
+pygame.mixer.music.set_volume(0.1)
+
 
 running = True
 while running:
@@ -35,3 +41,4 @@ while running:
     pygame.display.update()
 
 pygame.quit()
+sys.exit()
