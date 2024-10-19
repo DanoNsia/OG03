@@ -21,7 +21,7 @@ target_y = random.randint(0, SCREEN_HEIGHT - target_height)
 
 color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
-pygame.mixer.music.load("C:/Users/sibra/Downloads/Xlout-Aria-Math-_Phonk-Remix_-_Feat.-Nateki_.mp3")
+pygame.mixer.music.load("music/Xlout-Aria-Math-_Phonk-Remix_-_Feat.-Nateki_.mp3")
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.1)
 
